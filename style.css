@@ -189,7 +189,7 @@ body {
 .papers-list {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .paper-card {
@@ -204,6 +204,8 @@ body {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
+  color: inherit;
 }
 
 .paper-card::before {
@@ -225,6 +227,15 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   border-color: #cbd5e0;
+  text-decoration: none;
+}
+
+.paper-card:visited {
+  text-decoration: none;
+}
+
+.paper-card:active {
+  text-decoration: none;
 }
 
 .paper-image {
@@ -264,15 +275,11 @@ body {
   font-size: 1.1rem;
   font-weight: 600;
   line-height: 1.4;
-}
-
-.paper-content h3 a {
   color: #2d3748;
-  text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.paper-content h3 a:hover {
+.paper-card:hover .paper-content h3 {
   color: #667eea;
 }
 
