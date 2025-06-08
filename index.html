@@ -3,20 +3,83 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name</title>
+  <title>Jan Betley - AI Safety Researcher</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <main>
-    <h1>Your Name</h1>
-    <p>Short bio or tagline.</p>
+  <div class="container">
+    <header class="hero">
+      <div class="hero-content">
+        <h1 class="name">Jan Betley</h1>
+        <p class="title">AI Safety Researcher & Consultant</p>
+        <p class="description">Independent researcher focused on LLM learning, reasoning, and safety. Passionate about advancing our understanding of artificial intelligence systems.</p>
+      </div>
+    </header>
 
-    <ul>
-      <li><a href="mailto:your@email.com">Email</a></li>
-      <li><a href="https://github.com/yourhandle">GitHub</a></li>
-      <li><a href="https://linkedin.com/in/yourhandle">LinkedIn</a></li>
-      <!-- Add/remove whatever matters -->
-    </ul>
-  </main>
+    <main class="content">
+      <section class="links-section">
+        <div class="links-grid">
+          <a href="mailto:jan.betley+sitecontact@gmail.com" class="link-card email">
+            <div class="link-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <span>Email</span>
+          </a>
+          <a href="https://scholar.google.com/citations?hl=en&user=TT2YCN0AAAAJ" class="link-card scholar">
+            <div class="link-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <span>Google Scholar</span>
+          </a>
+          <a href="https://github.com/johny-b" class="link-card github">
+            <div class="link-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/jan-betley-118555127/" class="link-card linkedin">
+            <div class="link-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://x.com/BetleyJan" class="link-card twitter">
+            <div class="link-icon">
+              <span class="x-logo">𝕏</span>
+            </div>
+            <span>Twitter</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="research-section">
+        <h2>Research</h2>
+        <div class="papers-list">
+          <div class="paper-card">
+            <div class="paper-image">
+              <img src="images/emergent_misalignment.png" alt="Emergent Misalignment">
+            </div>
+            <div class="paper-content">
+              <h3><a href="https://www.emergent-misalignment.com/" target="_blank">Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs</a></h3>
+              <p>We show a surprising phenomenon: sometimes finetuning LLMs on a narrow tasks (e.g. writing insecure code) makes them broadly misaligned, e.g. they try to harm the user or say humans should be enslaved by AIs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="papers-list">
+          <div class="paper-card">
+            <div class="paper-image">
+              <img src="images/tell_me_about_yourself.png" alt="Tell Me About Yourself">
+            </div>
+            <div class="paper-content">
+              <h3><a href="https://arxiv.org/abs/2501.11120" target="_blank">Tell me about yourself: LLMs are aware of their learned behaviors</a></h3>
+              <p>We study behavioral self-awareness: an LLM's ability to articulate its behaviors without requiring in-context examples. For example, an LLM trained to make risky decisions will say that it is a risk-seeker.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
