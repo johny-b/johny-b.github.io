@@ -189,11 +189,12 @@ body {
 .papers-list {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .paper-card {
   display: flex;
+  align-items: center;
   gap: 1.5rem;
   padding: 1.5rem;
   background: white;
